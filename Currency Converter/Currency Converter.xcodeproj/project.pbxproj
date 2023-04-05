@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5939650D29D38872009C4113 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939650C29D38872009C4113 /* Currency.swift */; };
 		59BB99F429CD0906007BCF05 /* Currency_ConverterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB99F329CD0906007BCF05 /* Currency_ConverterApp.swift */; };
 		59BB99F629CD0906007BCF05 /* ConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BB99F529CD0906007BCF05 /* ConverterView.swift */; };
 		59BB99F829CD0907007BCF05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59BB99F729CD0907007BCF05 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5939650C29D38872009C4113 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		59BB99F029CD0906007BCF05 /* Currency Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Currency Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59BB99F329CD0906007BCF05 /* Currency_ConverterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency_ConverterApp.swift; sourceTree = "<group>"; };
 		59BB99F529CD0906007BCF05 /* ConverterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterView.swift; sourceTree = "<group>"; };
@@ -45,6 +47,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5939650B29D3883D009C4113 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5939650C29D38872009C4113 /* Currency.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5939650E29DDA883009C4113 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		59BB99E729CD0906007BCF05 = {
 			isa = PBXGroup;
 			children = (
@@ -66,9 +83,11 @@
 		59BB99F229CD0906007BCF05 /* Currency Converter */ = {
 			isa = PBXGroup;
 			children = (
-				59BB9A0129CD09A8007BCF05 /* Views */,
 				59BB99F329CD0906007BCF05 /* Currency_ConverterApp.swift */,
 				59BB99F729CD0907007BCF05 /* Assets.xcassets */,
+				5939650B29D3883D009C4113 /* Models */,
+				59BB9A0129CD09A8007BCF05 /* Views */,
+				5939650E29DDA883009C4113 /* ViewModel */,
 				59BB99F929CD0907007BCF05 /* Preview Content */,
 			);
 			path = "Currency Converter";
@@ -213,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5939650D29D38872009C4113 /* Currency.swift in Sources */,
 				59BB99F629CD0906007BCF05 /* ConverterView.swift in Sources */,
 				59BB99F429CD0906007BCF05 /* Currency_ConverterApp.swift in Sources */,
 			);
@@ -347,11 +367,12 @@
 				DEVELOPMENT_TEAM = 9Q35DQ6RDG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Currency Converter";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -377,11 +398,12 @@
 				DEVELOPMENT_TEAM = 9Q35DQ6RDG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Currency Converter";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
